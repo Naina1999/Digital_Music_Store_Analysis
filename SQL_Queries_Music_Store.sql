@@ -154,7 +154,7 @@ ORDER BY
 -- ADVANCED QUESTIONS:
 -- Ques1: Find how much amount spent by each customer on artists? 
 --        Write a query to return customer name, artist name and total spent
--- Using CTE(Common Table Expression): used for creating temporary table that doesn't exit 
+-- Using CTE(Common Table Expression): 
 
 WITH best_selling_artist AS (
 	SELECT artist.artist_id AS artist_id, artist.name AS artist_name, SUM(invoice_line.unit_price*invoice_line.quantity) AS total_sales
